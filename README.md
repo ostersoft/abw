@@ -40,6 +40,7 @@ Development setup:
   OpenJDK 64-Bit Server VM (build 17.0.2+8-86, mixed mode, sharing)
    
 2. Download Docker: https://www.docker.com/products/docker-desktop/
+   a) it might requiere to update Linux Subsystem for Windows: execute in cmd: wsl --update
 3. Download IntelliJ IDEA: https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC
 4. Download nmap for Windows: https://nmap.org/download.html#windows
    a) ensure "nmap localhost" cmd works.
@@ -51,9 +52,8 @@ GUI MODULE <React + Java>: [_____] : Enter IP to Scan [SCAN NOW] : button --> Se
 
 SCANNING MODULE <Java> : Listen to MQ (toScan). Execute command - nmap ip -> send results to MQ (toProcess) [ip,result]
 
-PROCESSING MODULU <Java> : Listen to MQ (toProcess). Format nmap output -> send result to MQ (toDisplay) [json]
+PROCESSING MODULE <Java> : Listen to MQ (toProcess). Format nmap output -> send result to MQ (toDisplay) [json]
 
-GUI MODULE 2 <React + Java>: List to MQ (toDisplay). Display te result as table with all the fields from the [json]
 
 JSON ARRAY FIELDS - [json]:
 [ip : {
