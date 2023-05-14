@@ -6,7 +6,7 @@ ABW stands for Agencja Bezpieczeństwa Wewnętrznego which translates from Polis
 <h4>Tech stack:</h4>
 
 <ul>
-   <li>Backend: Java + SpringBoot</li>
+<li>Backend: Java + SpringBoot</li>
 <li>Frontend: React</li>
 <li>OS Tooling: Linux</li>
 <li>Distribution: Docker Image</li>
@@ -17,7 +17,15 @@ ABW stands for Agencja Bezpieczeństwa Wewnętrznego which translates from Polis
 
 <h4>Development:</h4>
 
+<li> git clone https://github.com/ostersoft/abw.git
+<li> open the abw directory into your IDE   
+<li> load all gradle project or just the one you want to work at.
+<li> set Java SDK 17 for your project   
+
+
 They say every project can be done with infinite number of interns, let's try, and also let's try to get them from TikTok.
+
+
 
 <h4>Code Style:</h4>
 
@@ -54,11 +62,9 @@ Easy - not existing but README files.
 
 <ul>
 <li>GUI MODULE <React + Java>: [_____] : Enter IP to Scan [SCAN NOW] : button --> Send scan request to MQ (toScan) [ip]</li>
-
 <li>SCANNING MODULE <Java> : Listen to MQ (toScan). Execute command - nmap ip -> send results to MQ (toProcess) [ip,result]</li>
-
 <li>PROCESSING MODULE <Java> : Listen to MQ (toProcess). Format nmap output -> send result to MQ (toDisplay) [json]</li>
-   </ul>
+</ul>
 
 JSON ARRAY FIELDS - [json]:<br />
 [ip : { <br />
