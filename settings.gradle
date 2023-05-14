@@ -1,0 +1,4 @@
+rootProject.name = 'abw'
+include 'gui'
+include 'scanner'
+include 'proc'
